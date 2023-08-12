@@ -1,0 +1,144 @@
+body {
+    background-color: aqua;
+
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 12vh;
+}
+
+.logo {
+    width: 55%;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+img {
+    height: 80%;
+}
+
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5 {
+
+    margin-left: 40px;
+    padding-top: 30px;
+    font-size: 20px;
+
+}
+
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+
+
+.filme_geral {
+    background-image: url(../catalogo/fundo.jpg);
+    display: flex;
+    background-size: cover;
+    height: 100vh;
+}
+
+.filme {
+    margin-top: 30px;
+    height: 500px;
+    margin-left: 20vh;
+    width: 30%;
+    color: white;
+}
+
+.filme1 {
+    display: flex;
+    justify-content: center;
+
+    width: 250px;
+}
+
+.imagem {
+    height: 40vh;
+    width: 250px;
+    background-color: gray;
+    border: solid #752e2b 3px;
+    border-radius: 25px;
+}
+
+.titulo_filme {
+    font-size: 35px;
+}
+
+
+.info_filme {
+    width: 70%;
+}
+
+.sinopse {
+    height: 80%;
+}
+
+.dados_filme {
+    display: flex;
+}
+
+.autor,
+.genero,
+.duracao,
+.direcao {
+    margin-top: 20px;
+    min-width: 150px;
+    border: solid white 1px;
+    margin-left: 20px;
+    padding-left: 20px;
+    background-color: #f2eab7;
+    border-radius: 10px;
+}
+
+
+.conteudo_sinopse {
+    margin-top: 20px;
+    padding-top: 40px;
+    padding-left: 50px;
+    background-color: #171f25a9;
+    color: #0B090A;
+    height: 70%;
+    width: 900px;
+    border-radius: 25px;
+
+}
+
+
+b {
+    font-size: 20px;
+}
+
+.butao {
+    display: flex;
+    border-radius: 20px;
+    border: solid white;
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: #f2eab7;
+    height: 60px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rodape {
+    background-color: #0B090A;
+    height: 20vh;
+    color: #F5F3F4;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 22px;
+}

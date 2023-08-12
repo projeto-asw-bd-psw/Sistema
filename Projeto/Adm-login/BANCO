@@ -1,0 +1,60 @@
+DROP DATABASE IF EXISTS BANCO;
+CREATE DATABASE BANCO 
+ DEFAULT CHARACTER SET UTF8
+DEFAULT COLLATE UTF8_GENERAL_CI;
+USE BANCO;
+
+CREATE TABLE Administrador(
+matricula int primary key auto_increment,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL,
+cpf CHAR(16) NOT NULL,
+senha VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Cliente(
+idcliente INT auto_increment,
+nome VARCHAR(100) NOT NULL,
+email VARCHAR(100) NOT NULL,
+cpf CHAR(16) NOT NULL UNIQUE,
+senha VARCHAR(100) NOT NULL,
+PRIMARY KEY(idcliente)
+);
+
+CREATE TABLE Sessao(
+idsessao int auto_increment,
+numero SMALLINT NOT NULL,
+horario time NOT NULL,
+sala SMALLINT NOT NULL,
+id SMALLINT NOT NULL,
+valor char (10),
+data date,
+primary key(idsessao, numero)
+);
+
+
+CREATE TABLE Filme(
+id smallint primary key auto_increment,
+ nome VARCHAR (200) NOT NULL,
+genero VARCHAR(100) NOT NULL,
+data_lancamento date NOT NULL,
+direcao VARCHAR(100) NOT NULL,
+ duracao CHAR(5) NOT NULL,
+ sinopse TEXT NOT NULL,
+ roteiro VARCHAR(150) NOT NULL,
+ elenco VARCHAR (500) NOT NULL
+); 
+CREATE TABLE Assento(
+  idassento int primary key auto_increment, 
+    fileira TINYINT NOT NULL,
+numero SMALLINT NOT NULL,
+   numero_Sessao SMALLINT NOT NULL,
+   sala_sessao SMALLINT NOT NULL
+);
+CREATE TABLE Ingresso(
+  idingresso int primary key auto_increment, 
+  num_assento SMALLINT NOT NULL,
+   num_compra SMALLINT NOT NULL,
+   form_pagamento VARCHAR(30),
+   numero_Sessao SMALLINT NOT NULL
+);

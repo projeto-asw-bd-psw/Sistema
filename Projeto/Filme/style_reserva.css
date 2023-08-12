@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 221, 221);
+    height: 12vh;
+}
+
+.logo {
+    width: 55%;
+    padding-left: 40px;
+    padding-top: 10px;
+}
+
+img {
+    height: 80%;
+}
+
+.caixa1,
+.caixa2,
+.caixa3,
+.caixa4,
+.caixa5 {
+
+    margin-left: 40px;
+    padding-top: 20px;
+     font-size: 20px;
+     
+}
+
+a:link {
+    text-decoration:none;
+    }
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(92, 91, 91);
+    padding-right: 50px;
+}
+
+.conteudo{
+    display: flex;
+    background-color: rgb(92, 91, 91);
+    justify-content: center;
+
+}
+
+.assentos{
+    width: 900px;
+    height: 600px;
+    padding-right: 50px;
+    border-radius: 25px;
+}
+
+
+.selecao{
+    display: flex;
+    background-color: rgb(92, 91, 91);
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+    
